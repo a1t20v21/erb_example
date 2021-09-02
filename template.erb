@@ -1,0 +1,13 @@
+<% if not @files_path.nil? %>
+type: log
+paths: <%= @files_path %>
+fields_under_root: true
+ignore_older: 30h
+close_inactive: 24h
+clean_inactive: 36h
+close_removed: false
+clean_removed: false
+multiline.pattern: '^[[:space:]]+(at|\.{3})[[:space:]]+\b|^Caused by:'
+multiline.negate: false
+multiline.match: after
+<% end %>

@@ -1,0 +1,17 @@
+## Filebeat logs
+filebeat_paths:
+  team1:
+    - "/opt/apps/core/volumes/japan/logs/messaging.log*"
+    - "/opt/apps/core/volumes/japan/logs/errors.log*"
+    - "/opt/apps/core/volumes/america/logs/messaging.log*"
+    - "/opt/apps/core/volumes/america/logs/errors.log*"
+    - "/opt/apps/core/volumes/italy/logs/messaging.log*"
+    - "/opt/apps/core/volumes/italy/logs/errors.log*"
+    - "/opt/apps/core/volumes/spain/logs/messaging.log*"
+    - "/opt/apps/core/volumes/spain/logs/errors.log*"
+  team2:
+    - "/opt/apps/core/volumes/india/logs/messaging.log*"
+    - "/opt/apps/core/volumes/india/logs/errors.log*"
+    - "/opt/apps/core/volumes/britain/logs/messaging.log*"
+    - "/opt/apps/core/volumes/britain/logs/errors.log*"
+  team3:
